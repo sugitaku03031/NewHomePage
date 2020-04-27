@@ -1,0 +1,53 @@
+/* ブラックモード */
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background: #333333;
+        color: white;
+    }
+    .menu button {
+        color: white;
+    }
+    .drawer-hamburger-icon, .drawer-hamburger-icon:after, .drawer-hamburger-icon:before {
+        background-color: white;
+}
+
+/* タブレット端末 */
+
+@media(max-width:1600px) {
+    .container {
+        width: 90%;
+    }
+    header {
+        height: 160px;
+    }
+}
+
+/* スマートフォン向け */
+
+@media(max-width:670px) {
+    .container{
+        width: 100%;
+    }
+    header{
+        height: 60px;
+    }
+    .headerlog{
+        float: right;
+    }
+    .menu button{
+        /* バンバーガーボタンを使う */
+        display: none;
+    }
+    .fla{
+        display: none;
+    }
+    .main{
+        float: none;
+        width: 100%;
+    }
+    .side{
+        float: none;
+        width: 100%;
+    }
+}
