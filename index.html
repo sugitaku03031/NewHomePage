@@ -29,12 +29,16 @@
 	<!-- ナビゲーションの中身 -->
 	<nav class="drawer-nav" role="navigation">
 		<ul class="drawer-menu">
-			<li><a class="drawer-brand" href="#">Brand</a></li>
-			<li><a class="drawer-menu-item" href="#">Nav1</a></li>
-			<li><a class="drawer-menu-item" href="#">Nav2</a></li>
+			<li><a class="drawer-brand" href="index.html">トップ</a></li>
+			<li><a class="drawer-menu-item" href="about.html">自己紹介</a></li>
+			<li><a class="drawer-menu-item" href="event.html.html">イベント</a></li>
+			<li><a class="drawer-menu-item" href="minecraft.html">マイクラ</a></li>
+			<li><a class="drawer-menu-item" href="">旧Nexus</a></li>
+			<li><a class="drawer-menu-item" href="access.html">お知らせ</a></li>
+			<li><a class="drawer-menu-item" href="contact.html">連絡先</a></li>
 		</ul>
 	</nav>
-	
+
 	<header>
 		<!-- ハンバーガーボタン -->
 		<button type="button" class="drawer-toggle drawer-hamburger">
@@ -48,8 +52,8 @@
 		<div class="menu">
 			<button onclick="location.href='./index.html'" value="トップ">トップ</button>
 			<button onclick="location.href='./about.html'" value="自己紹介">自己紹介</button>
-			<button onclick="location.href='./room.html'" value="イベント">イベント</button>
-			<button onclick="location.href='./room.html'" value="マイクラ鯖">マイクラ</button>
+			<button onclick="location.href='./event.html'" value="イベント">イベント</button>
+			<button onclick="location.href='./minecraft.html'" value="マイクラ鯖">マイクラ</button>
 			<button onclick="location.href='//poizon-nexus.jimdo.com/'" value="旧Nexus">旧Nexus</button>
 			<button onclick="location.href='./access.html'" value="お知らせ">お知らせ</button>
 			<button onclick="location.href='./contact.html'" value="連絡先">連絡先</button>
@@ -91,26 +95,27 @@
 					<li><a href="http://poizon-nexus.jimdo.com/杉拓ブログ/">杉拓ブログ</a></li>
 				</ul>
 			</div>
-			<!--/box-->
-			<!--/box-->
-			<!--/box-->
-			<!--/box-->
 		</div>
-
-		<!--/side-->
 		<div id="footer">
 			<br />
 			<a href="http://nikukyu-punch.com/" target="_blank">Template design by Nikukyu-Punch</a>
 		</div>
-		<!--/footer-->
 	</div>
-	<!--/contents-->
-	<!--/container-->
 	<!-- ドロワーメニューの利用宣言 -->
 	<script>
 		$(document).ready(function () {
 			$('.drawer').drawer();
 		});
 	</script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-105383727-3"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-105383727-3');
+	</script>
 </body>
+
 </html>

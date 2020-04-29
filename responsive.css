@@ -10,6 +10,7 @@
     }
     .drawer-hamburger-icon, .drawer-hamburger-icon:after, .drawer-hamburger-icon:before {
         background-color: white;
+    }
 }
 
 /* タブレット端末 */
@@ -26,28 +27,45 @@
 /* スマートフォン向け */
 
 @media(max-width:670px) {
-    .container{
+    .container {
         width: 100%;
     }
-    header{
+    header {
         height: 60px;
     }
-    .headerlog{
+    .headerlog {
         float: right;
     }
-    .menu button{
+    .menu button {
         /* バンバーガーボタンを使う */
         display: none;
     }
-    .fla{
+    /* フラッシュプレイヤー*/
+    .fla {
+        /* 幅・高さ指定を無効に */
         display: none;
     }
-    .main{
+    /* 左側コンテンツ */
+    .main {
+        /* 左寄せ解除 */
         float: none;
+        /* 横幅いっぱいに */
         width: 100%;
     }
-    .side{
+    /* 右側ボックス↓ */
+    .side {
+        /* 右側配置解除 */
         float: none;
+        /* 横幅いっぱいに */
         width: 100%;
+    }
+    /* 自己紹介↓ */
+    .icon {
+        /* 左寄せを解除 */
+        float: none;
+    }
+    .selfintroduction {
+        /* 左に空白を作り右寄せを無しに */
+        margin: auto;
     }
 }

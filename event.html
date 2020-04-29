@@ -5,10 +5,11 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="copyright" content="Nikukyu-Punch" />
-	<!-- <title>新Nexus用ホームページ</title> -->
-	<title>スギタクソフトウェア|自己紹介</title>
-	<!-- <meta name="keywords" content="５" /> -->
+	<title>スギタクソフトウェア|イベント</title>
+	<!-- 共通CSS↓ -->
 	<link href="style.css" rel="stylesheet" type="text/css" />
+	<!-- イベントページ専用CSS↓ -->
+	<link href="eventstyle.css" rel="stylesheet" type="text/css" />
 	<!-- スマホ用ドロワー -->
 	<!-- drawer.css -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css">
@@ -25,20 +26,23 @@
 	<link href="responsive.css" rel="stylesheet" type="text/css" />
 </head>
 
+
+
+
+
 <body class="container drawer drawer--left">
 	<!-- ナビゲーションの中身 -->
 	<nav class="drawer-nav" role="navigation">
 		<ul class="drawer-menu">
 			<li><a class="drawer-brand" href="index.html">トップ</a></li>
 			<li><a class="drawer-menu-item" href="about.html">自己紹介</a></li>
-			<li><a class="drawer-menu-item" href="event.html">イベント</a></li>
+			<li><a class="drawer-menu-item" href="event.html.html">イベント</a></li>
 			<li><a class="drawer-menu-item" href="minecraft.html">マイクラ</a></li>
 			<li><a class="drawer-menu-item" href="">旧Nexus</a></li>
 			<li><a class="drawer-menu-item" href="access.html">お知らせ</a></li>
 			<li><a class="drawer-menu-item" href="contact.html">連絡先</a></li>
 		</ul>
 	</nav>
-
 	<header>
 		<!-- ハンバーガーボタン -->
 		<button type="button" class="drawer-toggle drawer-hamburger">
@@ -59,42 +63,46 @@
 			<button onclick="location.href='./contact.html'" value="連絡先">連絡先</button>
 		</div>
 	</header>
-	<!--/menu-->
-
+	<!--menu-->
 	<div class="contents">
+		<!-------main------->
 		<div class="main">
-			<h2 class="h2bg">チームリーダー　ポイズン</h2>
-			<img src="skin/poizun.png" class="icon">
-			<div class="selfintroduction">
-				<p>ちょっとドジだけど人にはとても優しい男子。</p>
-				<p>滑舌が悪いところが短所。企画、テクプロデューサー、作詞と演出を担当をしている。</p>
-				<p>好きなことは温泉と歌とダンス。</p>
-				<p>好きな芸能人：嵐の松本潤さんとSEKAI NO OWARI のFukasaさんと乃木坂46の星野みなみさんです。</p>
-				<p>僕は作詞と演出をしているのでセカオワさんのFukaseさんとSaoriさんをとても尊敬しています。あと秋元康先生もです。</p>
+			<h2>今後のイベント情報</h2>
+			<p>現在予定されてるイベントはありません</p>
+
+			<h2>過去のイベント情報</h2>
+			<div class="oldevents">
+				<div class="2017-8-8">
+					<h3>□2017年8月8日--夏だ！12時間生放送！--</h3>
+					<div class="eventleft">
+						<p>□参加者</p>
+						<ul class="participant">
+							<li>「マイクラオタク」さん</li>
+							<li>「フォックス」さん</li>
+							<li>「ぶーにゃん」さん</li>
+							<li>「サムライ流水」さん</li>
+						</ul>
+					</div>
+					<div class="eventright">
+						<p>□詳細</p>
+						<ul class="participant">
+							<li>リレー形式で生放送をしていくスタイルで合計放送時間が12時間にもなる長時間放送企画です</li>
+							<li>一人に割り当てられた放送時間は２時間（120分）</li>
+							<li>最後に視聴者参加型でマインクラフト企画をして終了となりました</li>
+						</ul>
+						<p>□裏話</p>
+						<p>
+							企画当初は「シェフ猫」・「スギタク」・「ぽいずん」の三人で開催する予定でしたが、開始直前にシェフ猫さんが手術で入院することになり、ぽいずんとスギタクで行うことも考えましたが、ぽいずんさんも予定が合わなくなり、スギタク一人だけになったので、マイクラオタクさんに相談したら知り合いサムライ流水さんが参加することになり、ぶーにゃんさんにも声をかけたら了承してくださったので何とか開催することができました。ありがとうございました。<br>By スギタク
+						</p>
+					</div>
+
+				</div>
+
 			</div>
-			<h2 class="h2bg">シェフ猫</h2>
-			<img src="skin/syehuneko.jpg" class="icon">
-			<div class="selfintroduction">
-				<p>面白くていろいろなことができる</p>
-				<p>男子</p>
-				<p>司会、美術を担当している。</p>
-				<p>僕は一様ゲーマーです。</p>
-				<p>あと旧Nexusの絵を描いてます。</p>
-				<p>顔出しはあまりしたくはないです。</p>
-				<p>好きな芸能人は嵐の相葉くん？と96猫さんです。</p>
-			</div>
-			<h2 class="h2bg">杉拓</h2>
-			<img src="skin/sugitaku.jpg" class="icon">
-			<div class="selfintroduction">
-				<p>パソコンの内部のことは詳しいです。</p>
-				<p>最初はシェフ猫さんとはマインクラフトPC版オンラインで知り合いました</p>
-				<p>ホームページや動画編集などを担当しています。</p>
-				<p>ちなみに僕は中３の男子です</p>
-				<p>顔出しはあまりしたくはないです。</p>
-				<p>音響担当をやってみたいなーと思ったりするかもよ</p>
-			</div>
+
+
 		</div>
-		<!--/main-->
+		<!-- side -->
 		<div class="side">
 			<div class="box">
 				<h3>他のページ</h3>
@@ -112,6 +120,7 @@
 			<a href="http://nikukyu-punch.com/" target="_blank">Template design by Nikukyu-Punch</a>
 		</div>
 	</div>
+	<!--/footer-->
 	<!-- ドロワーメニューの利用宣言 -->
 	<script>
 		$(document).ready(function () {

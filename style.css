@@ -138,7 +138,9 @@ header {
 .main p {
 	text-align: left;
 	padding: 0.5em 10px 1em;
-	
+}
+.main li {
+	text-align: left;
 }
 
 /*サイドコンテンツ（右側ボックス）
@@ -201,12 +203,6 @@ header {
 	padding-top: 0.5em;
 	padding-bottom: 0.5em;
 }
-
-.side .sidemenu a:hover {
-	/* background-image: url(images/sidemenu_bg_over.gif); */
-	/*カーソルオーバー時の背景画像*/
-}
-
 /*フッター（コピーライトなど入っている一番下のボックス）
 
 ---------------------------------------------------------------------------*/
@@ -299,11 +295,34 @@ header {
 
 /* 見出しCSS ----------------------------------------------------------------*/
 
-h2 {
+.main h2 {
 	padding: 0.4em 0.5em;/*文字の上下 左右の余白*/
 	color: #494949;/*文字色*/
 	background: #f4f4f4;/*背景色*/
 	border-left: solid 5px #7db4e6;/*左線*/
 	border-bottom: solid 3px #d7d7d7;/*下線*/
+	text-align: left;
 	}
 /* https://saruwakakun.com/html-css/reference/h-design */
+
+/* 見出し-2-CSS */
+
+.main h3 {
+	color: #364e96;/*文字色*/
+	background: #f4f4f4e0;
+	padding: 0.1em 0;/*上下の余白*/
+	border-top: solid 4px #364e96;/*上線*/
+	border-bottom: solid 4px #364e96;/*下線*/
+	margin: 10px 0px ;/*上に余白*/
+	text-align: left;
+  }
+
+/* 自己紹介アイコンを隣に.. */
+.icon {
+	float: left;
+	height: 200px;
+}
+.selfintroduction{
+	margin: 0px 0px 0px 200px;
+	/* float: right; */
+}
