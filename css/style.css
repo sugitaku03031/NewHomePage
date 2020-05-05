@@ -45,6 +45,11 @@ table {
 	border-spacing: 0;
 }
 
+/* ヘッダーの空き */
+.contents {
+	padding: 50px 0px;
+}
+
 /*コンテナー（HP全体を囲むブロック）
 
 ---------------------------------------------------------------------------*/
@@ -78,51 +83,18 @@ header {
 /*メインメニュー（上部に横並びの画像メニュー）
 
 ---------------------------------------------------------------------------*/
-.menu button{
-	/* vertical-align: bottom; */
-	/* ↓横並び */
-	float: left;
-	/* 文字サイズ */
-	font-size: 25px;
-	/* 間隔 */
-	margin-right: 10px;
-	margin-top: 10px;
-	/*線*/
-	border: solid 2px;
-	/* 角の丸み */
-	border-radius: 10px;
-	/* ボタンの中身を中央に */
-	text-align: center;
-	height: 60px;
-	width: 170px;
-	background: transparent;
-	
-}
 
 
 /*FLASH梱包ボックス
 
 ---------------------------------------------------------------------------*/
 
-.fla {
-	background-color: #000000;
-	/* height: 400px; */
-	width: 100%;
-}
-
-.fla p {
-	color: #FFFFFF;
-	text-align: center;
-}
 
 /*コンテンツ（左右のブロックを囲むボックス）
 
 ---------------------------------------------------------------------------*/
 
-.contents {
-	/* position: relative; */
-	/* top: 100px; */
-}
+
 
 /*メインコンテンツ（左側ボックス）
 
