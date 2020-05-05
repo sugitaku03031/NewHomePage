@@ -1,12 +1,7 @@
 body {
-	font-family: "メイリオ", Meiryo, "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro";
 	line-height: 2;
-	/* margin: 0px; */
 	padding: 0px;
 	text-align: center;
-	/* background-image: url(images/bg.gif); */
-	/* background-repeat: no-repeat; */
-	/* background-position: center top; */
 }
 
 h1, h2, h3, h4, h5, p, ul, ol, li, dl, dt, dd, form {
@@ -46,72 +41,34 @@ table {
 }
 
 /* ヘッダーの空き */
-.contents {
-	padding: 50px 0px;
+
+header, nav, article, aside, section, footer {
+	display: block;
 }
-
-/*コンテナー（HP全体を囲むブロック）
-
----------------------------------------------------------------------------*/
-
-.container {
-	/* text-align: left; */
-	width: 1600px;
-	/*HP全体の横幅*/
-	margin-right: auto;
-	margin-left: auto;
-}
-
-/*ヘッダー（ロゴや電話番号画像が入っているブロック）
-
----------------------------------------------------------------------------*/
-header {
-	/* background-color: aqua; */
-	width: 100%;
-	/* ↓背景を入れる場合重要 */
-	/* position: fixed; */
-	height: 90px;
-}
-
-.headerlog{
-	/* 間隔 */
-	margin-right: 10px;
-	/* 左寄せ */
-	float: left;
-}
-
-/*メインメニュー（上部に横並びの画像メニュー）
-
----------------------------------------------------------------------------*/
-
-
-/*FLASH梱包ボックス
-
----------------------------------------------------------------------------*/
-
 
 /*コンテンツ（左右のブロックを囲むボックス）
-
 ---------------------------------------------------------------------------*/
-
-
+.contents{
+	display: flex;
+}
 
 /*メインコンテンツ（左側ボックス）
 
 ---------------------------------------------------------------------------*/
 
-.main{
+section {
 	/* 左寄せ */
 	float: left;
 	/* 右側を入れるために幅を調整 */
-	width: 80%;
-	
+	width: 100%;
 }
-.main p {
+
+section p {
 	text-align: left;
 	padding: 0.5em 10px 1em;
 }
-.main li {
+
+section li {
 	text-align: left;
 }
 
@@ -119,25 +76,20 @@ header {
 
 ---------------------------------------------------------------------------*/
 
-.side {
+aside {
 	/*ボックスを右側に配置*/
 	float: right;
 	/*ボックスの幅*/
-	width: 20%;
-	/* padding-top: 20px; */
+	width: 500px;
 }
 
-.side p {
-	/* padding: 0.5em 5px 1em; */
-}
-
-.side .box {
+aside .box {
 	border: 1px solid #bfbfbf;
 	/*右側ボックスの各ボックスを囲む線色。*/
-	/* margin-bottom: 1em; */
+	margin-bottom: 1em;
 }
 
-.side h3 {
+aside h3 {
 	font-size: 100%;
 	/* color: #424E60; */
 	/*h3タグの文字色*/
@@ -155,7 +107,7 @@ header {
 	/*背景画像を上下中央に配置*/
 }
 
-.side .sidemenu a {
+aside .sidemenu a {
 	text-decoration: none;
 	/*サイドメニューのリンクの下線を削除*/
 	/* width: 326px; */
@@ -175,11 +127,12 @@ header {
 	padding-top: 0.5em;
 	padding-bottom: 0.5em;
 }
+
 /*フッター（コピーライトなど入っている一番下のボックス）
 
 ---------------------------------------------------------------------------*/
 
-#footer {
+footer {
 	text-align: center;
 	clear: both;
 	width: 100%;
@@ -188,66 +141,10 @@ header {
 /*メインコンテンツ内の「What's New」部分
 
 ---------------------------------------------------------------------------*/
-.test{
-	width: 100%;
-}
-
-
-#main dl.new {
-	width: 560px;
-	/*What's Newボックスの幅*/
-	height: 100px;
-	/*What's Newボックスの高さ*/
-	overflow: auto;
-	padding: 10px;
-	margin-right: auto;
-	margin-left: auto;
-}
-
-#main dl.new dt {
-	font-weight: bold;
-	/*日付の色を太字にする*/
-}
-
-#main dl.new dd {
-	border-bottom: 1px solid #bfbfbf;
-	/*日付ごとの下線*/
-}
 
 /*テーブル
 
 ---------------------------------------------------------------------------*/
-
-.ta1 {
-	width: 580px;
-	margin-right: auto;
-	margin-left: auto;
-}
-
-.ta1, .ta1 td, .ta1 th {
-	border: 1px solid #272E39;
-}
-
-.ta1 td, .ta1 th {
-	padding: 10px;
-}
-
-.ta1 th {
-	background-color: #fafafa;
-	/*左側thタグの背景色*/
-	width: 150px;
-	/*左側thタグの幅*/
-	text-align: center;
-}
-
-.ta1 th.tamidashi {
-	width: auto;
-	text-align: left;
-	background-color: #485569;
-	/*テーブルの見出し部分の背景色（room.htmlで使用しています）*/
-	color: #FFFFFF;
-	/*文字色*/
-}
 
 /*細々
 
@@ -267,34 +164,47 @@ header {
 
 /* 見出しCSS ----------------------------------------------------------------*/
 
-.main h2 {
-	padding: 0.4em 0.5em;/*文字の上下 左右の余白*/
-	color: #494949;/*文字色*/
-	background: #f4f4f4;/*背景色*/
-	border-left: solid 5px #7db4e6;/*左線*/
-	border-bottom: solid 3px #d7d7d7;/*下線*/
+section h2 {
+	padding: 0.4em 0.5em;
+	/*文字の上下 左右の余白*/
+	color: #494949;
+	/*文字色*/
+	background: #f4f4f4;
+	/*背景色*/
+	border-left: solid 5px #7db4e6;
+	/*左線*/
+	border-bottom: solid 3px #d7d7d7;
+	/*下線*/
 	text-align: left;
-	}
+}
+
 /* https://saruwakakun.com/html-css/reference/h-design */
 
 /* 見出し-2-CSS */
 
-.main h3 {
-	color: #364e96;/*文字色*/
+section h3 {
+	color: #364e96;
+	/*文字色*/
 	background: #f4f4f4e0;
-	padding: 0.1em 0;/*上下の余白*/
-	border-top: solid 4px #364e96;/*上線*/
-	border-bottom: solid 4px #364e96;/*下線*/
-	margin: 10px 0px ;/*上に余白*/
+	padding: 0.1em 0;
+	/*上下の余白*/
+	border-top: solid 4px #364e96;
+	/*上線*/
+	border-bottom: solid 4px #364e96;
+	/*下線*/
+	margin: 10px 0px;
+	/*上に余白*/
 	text-align: left;
-  }
+}
 
 /* 自己紹介アイコンを隣に.. */
+
 .icon {
 	float: left;
 	height: 200px;
 }
-.selfintroduction{
+
+.selfintroduction {
 	margin: 0px 0px 0px 200px;
 	/* float: right; */
 }

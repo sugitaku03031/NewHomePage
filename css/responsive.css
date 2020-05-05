@@ -12,6 +12,7 @@
         background-color: white;
     }
 }
+/* 通常 */
 
 /* タブレット端末 */
 
@@ -19,41 +20,24 @@
     .container {
         width: 90%;
     }
-    header {
-        height: 160px;
-    }
 }
 
 /* スマートフォン向け */
 
 @media(max-width:670px) {
-    .container {
-        width: 100%;
-    }
-    header {
-        height: 60px;
-    }
-    .headerlog {
-        float: right;
-    }
-    .menu button {
-        /* バンバーガーボタンを使う */
-        display: none;
-    }
-    /* フラッシュプレイヤー*/
-    .fla {
-        /* 幅・高さ指定を無効に */
-        display: none;
+    /* 左右コンテンツ解除 */
+    .contents{
+        display: block;
     }
     /* 左側コンテンツ */
-    .main {
+    section {
         /* 左寄せ解除 */
         float: none;
         /* 横幅いっぱいに */
         width: 100%;
     }
     /* 右側ボックス↓ */
-    .side {
+    aside {
         /* 右側配置解除 */
         float: none;
         /* 横幅いっぱいに */
