@@ -1,6 +1,6 @@
 body {
 	line-height: 2;
-	padding: 0px;
+	margin: 0px; 
 	text-align: center;
 }
 
@@ -10,11 +10,12 @@ h1, h2, h3, h4, h5, p, ul, ol, li, dl, dt, dd, form {
 }
 
 ul {
-	list-style-type: none;
+	list-style: none;
 }
 
 img {
 	border: none;
+	vertical-align:top;
 }
 
 input, textarea, select {
@@ -38,6 +39,14 @@ table {
 	border-collapse: collapse;
 	font-size: 100%;
 	border-spacing: 0;
+}
+
+/* 応援バーナー内画像 
+---------------------------------------------------------------------------*/
+
+li img{
+	padding: 5px 0px;
+	width: 100%;
 }
 
 /* ヘッダーの空き */
