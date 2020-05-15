@@ -1,6 +1,9 @@
 /* ブラックモード */
 
 @media (prefers-color-scheme: dark) {
+    a{
+        color: white;
+    }
     body {
         background: #333333;
         color: white;
