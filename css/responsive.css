@@ -25,14 +25,14 @@
     /* 左側コンテンツ */
     section {
         /* 左寄せ解除 */
-        float: none;
+        /* float: none; */
         /* 横幅いっぱいに */
         width: 100%;
     }
     /* 右側ボックス↓ */
     aside {
         /* 右側配置解除 */
-        float: none;
+        /* float: none; */
         /* 横幅いっぱいに */
         width: 100%;
     }

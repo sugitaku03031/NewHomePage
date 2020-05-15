@@ -11,9 +11,6 @@
 	<link href="css/responsive.css" rel="stylesheet" type="text/css" />
 	<!-- ↓ヘッダーluxbar -->
 	<link href="css/luxbar.min.css" rel="stylesheet" type="text/css">
-	<!-- GoogleAdSense（すみません...。） -->
-	<script data-ad-client="ca-pub-9100509592476089" async
-		src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	<style type="text/css">
 		/* メインページ */
 		.participant {
@@ -37,6 +34,22 @@
 			/*ボックスの幅*/
 			width: 80%;
 		}
+
+		/* 幅が1280以下になると出演者の表示が見にくくなるのを修正 */
+		@media(max-width: 1280px) {
+
+			/* イベント左側 */
+			.eventleft {
+				float: none;
+				width: 100%;
+			}
+
+			/* イベント右側 */
+			.eventright {
+				float: none;
+				width: 100%;
+			}
+		}
 	</style>
 </head>
 
@@ -55,10 +68,7 @@
 				<li class="luxbar-item"><a href="about.html">自己紹介</a></li>
 				<li class="luxbar-item"><a href="event.html">イベント情報</a></li>
 				<li class="luxbar-item"><a href="minecraft.html">マイクラ鯖</a></li>
-				<li class="luxbar-item"><a href="#">お知らせ</a></li>
-				<li class="luxbar-item"><a href="#">ブログ</a></li>
-				<li class="luxbar-item"><a href="#">旧サイト</a></li>
-				<li class="luxbar-item"><a href="#">お問い合わせ</a></li>
+				<li class="luxbar-item"><a href="contact.html">お問い合わせ</a></li>
 			</ul>
 		</div>
 	</header>
@@ -99,22 +109,21 @@
 		</section>
 		<!-- リンク集・Twitter・広告 -->
 		<aside>
-			<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-			<!-- メイン -->
-			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9100509592476089"
-				data-ad-slot="2369171254" data-ad-format="auto" data-full-width-responsive="true"></ins>
-			<script>
-				(adsbygoogle = window.adsbygoogle || []).push({});
-			</script>
 			<div class="box">
 				<h3>他のページ</h3>
 				<ul class="sidemenu">
-					<li><a href="#">Twitter</a></li>
-					<li><a href="#">YouTube</a></li>
-					<li><a href="#">ツイキャス</a></li>
-					<li><a href="http://poizon-nexus.jimdo.com/ポイズンブログ/">ポイズンブログ</a></li>
-					<li><a href="http://poizon-nexus.jimdo.com/シェフ猫ブログ/">シェフ猫ブログ</a></li>
-					<li><a href="http://poizon-nexus.jimdo.com/杉拓ブログ/">杉拓ブログ</a></li>
+					<li><a href="https://twitter.com/SugitakuSoftwar">Twitter</a></li>
+					<li><a href="https://www.youtube.com/channel/UC9XA1cikX2tCycT-wNZ6noA">YouTube</a></li>
+					<li><a href="https://qiita.com/sugitaku03031">Qiita</a></li>
+					<li><a href="https://github.com/sugitaku03031">GitHub</a></li>
+				</ul>
+			</div>
+			<div class="box">
+				<h3>ブログ</h3>
+				<ul class="sidemenu">
+					<li><a href="https://sugitaku03031.fanbox.cc/">PixivFANBOX</a></li>
+					<li><a href="https://ci-en.net/creator/5168">Ci-en</a></li>
+					<li><a href="https://fantia.jp/fanclubs/43844">Fantia</a></li>
 				</ul>
 			</div>
 			<div class="box">
@@ -127,7 +136,7 @@
 			<div class="box">
 				<h3>Twitter</h3>
 				<a class="twitter-timeline" data-height="600" data-theme="dark"
-					href="https://twitter.com/sugitaku03031?ref_src=twsrc%5Etfw">Tweets by sugitaku03031</a>
+					href="https://twitter.com/SugitakuSoftwar?ref_src=twsrc%5Etfw">Tweets by SugitakuSoftwar</a>
 				<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 			</div>
 		</aside>
