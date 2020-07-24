@@ -7,7 +7,7 @@ $('.slider').slick({
     autoplaySpeed: 3000,
     // 自動再生や左右の矢印でスライドするスピード
     speed: 400,
-    // 自動再生時にスライドのエリアにマウスオンで一時停止するかどうか
+    // 自動再生時にスライドのエリアにマウスオンで一F時停止するかどうか
     pauseOnHover: true,
     // 自動再生時にドットにマウスオンで一時停止するかどうか
     pauseOnDotsHover: false,
